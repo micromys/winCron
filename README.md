@@ -26,9 +26,9 @@ see crontab.txt
 * python winCron.py [crontab.txt [crontab.log [crontab.pid]]]
 * all files are supposed to be in the same folder
 * create shortcut on your desktop with: 
-* * target C:\Python27\python.exe crontab.py crontab.txt crontab.log crontab.pid
-* * start in "C:\Users\your name\Desktop"
-* * Run Minimised
+  * target C:\Python27\python.exe crontab.py crontab.txt crontab.log crontab.pid
+  * * start in "C:\Users\your name\Desktop"
+  * * Run Minimised
 
 The defaults are crontab.txt,crontab.log,crontab.pid
 
