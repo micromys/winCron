@@ -10,7 +10,6 @@ winCron supports all timing-arguments that Linux crontab supports, like:
 * other arguments are currently not supported
 
 Sample crontab.txt
------------------------------------------------------------------------------------------------------------------------------------------
 m		h			dom		mon		dow		command
 
 m		minute			0-59	*/2 every two minutes, 2,4,6: minute 2,4,6; 5-10: between 5th and 10th minute including
@@ -20,7 +19,7 @@ mon		month			1-12	*/2 every even month (Feb,Apr,Jun,Aug,Oct,Dec); 4,6: April, Ju
 dow		day of week		0-6		*/2: every even day of the week (0,2,4,6); 0,3,6: Mon,Thu,Sun; 3-5: Thu,Fri,Sat				(0=Mon,...,6=Sun)
 command							command windows can understand
 m		h			dom		mon		dow		command
------------------------------------------------------------------------------------------------------------------------------------------
+
 30 		10,13,16	*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\Sync_DS.ffs_batch"
 
 00		11,15		*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_d2n.ffs_batch"
