@@ -1,5 +1,5 @@
-## Currently Under Construction
-# winCron
+# Currently Under Construction
+## winCron
 Crontab for windows
 
 A Windows crontab.py program analogue to linux crontab utility
@@ -15,7 +15,7 @@ winCron supports all timing-arguments that Linux crontab supports, like:
 
 see crontab.txt 
 
-# Install winCron
+## Install winCron
 
 download winCron.py
 
