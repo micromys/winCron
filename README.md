@@ -23,6 +23,7 @@ download winCron.py
 
 * Open CMD box
 * python winCron.py [crontab.txt [crontab.log [crontab.pid]]]
+* all files are supposed to be in the same folder
 
 The defaults are crontab.txt,crontab.log,crontab.pid
 
