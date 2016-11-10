@@ -29,7 +29,7 @@ see crontab.txt
   * target: C:\Python27\python.exe crontab.py crontab.txt crontab.log crontab.pid
   * start in: "C:\Users\your name\Desktop"
   * Run: Minimised
-  * optionally you can put the shortcut in the startup file (C:\Users\yourname\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup) to starty it on startup
+  * optionally you can put the shortcut in the startup folder (C:\Users\yourname\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup) to start winCron.py it on startup
 
 The defaults are crontab.txt,crontab.log,crontab.pid
 
