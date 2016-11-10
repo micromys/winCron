@@ -14,4 +14,9 @@ winCron supports all timing-arguments that Linux crontab supports, like:
 
 see crontab.txt 
 
+# Install winCron
+
+download winCron.py
+
+
 
