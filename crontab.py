@@ -163,4 +163,3 @@ while 1:	# loop forever
 		log('cron: error opening %s file' % crontabFileName)
 
 	time.sleep(deltasleep(60)) # wait 60 seconds, until next minute
-
