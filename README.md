@@ -1,10 +1,10 @@
 # Currently Under Construction
-## winCron
+## crontab.py
 Crontab for windows
 
 A Windows crontab.py program analogue to linux crontab utility
 
-winCron supports all timing-arguments that Linux crontab supports, like:
+crontab.py supports all timing-arguments that Linux crontab supports, like:
 * * for every every minute,hour,month,day of month,day of week
 * comma (,) seperated arguments like 11,12,13 for 11th,12th,13th (minute,hour,mon,dom)
 * hyphen (-) seperated argument to specify a range like 12-16 for running jobs between 12:00 and 16:59
@@ -17,13 +17,13 @@ see crontab.txt
 
 ## Install winCron
 
-* download winCron.py
-* create crontab.txt
+* download crontab.py
+* create crontab.txt or download crontab.txt and adapt it
 
 ## Running winCron
 
 * Open CMD box
-* python winCron.py [crontab.txt [crontab.log [crontab.pid]]]
+* python crontab.py [crontab.txt [crontab.log [crontab.pid]]]
 * all files are supposed to be in the same folder
 * create shortcut on your desktop with: 
   * target: C:\Python27\python.exe crontab.py crontab.txt crontab.log crontab.pid
@@ -35,10 +35,5 @@ The defaults are crontab.txt,crontab.log,crontab.pid
 
 ## Running winCron as a Service
 
-* Open CMD box
-* python winCron.py [crontab.txt [crontab.log [crontab.pid]]]
-* all files are supposed to be in the same folder
-
-The defaults are crontab.txt,crontab.log,crontab.pid
-
+### Under construction
 
