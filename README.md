@@ -10,7 +10,8 @@ winCron supports all timing-arguments that Linux crontab supports, like:
 * other arguments are currently not supported
 
 **Sample crontab.txt**
-\# -------------------------------------------------------------------------------------------------------------------------------------------------
+
+\# -----------------------------------------------------------------------------------------------------------------------------------
 
 \# m		h			dom		mon		dow		command
 
@@ -28,8 +29,10 @@ winCron supports all timing-arguments that Linux crontab supports, like:
 
 \#	command							command windows can understand
 \#
+
 \# m		h			dom		mon		dow		command
-\# -------------------------------------------------------------------------------------------------------------------------------------------------
+
+\# -----------------------------------------------------------------------------------------------------------------------------------
 \#
 
 30 		10,13,16	*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\Sync_DS.ffs_batch"
