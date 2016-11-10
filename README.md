@@ -15,12 +15,12 @@ crontab.py supports all timing-arguments that Linux crontab supports, like:
 
 see crontab.txt 
 
-## Install winCron
+## Install crontab.py
 
 * download crontab.py
 * create crontab.txt or download crontab.txt and adapt it
 
-## Running winCron
+## Running crontab.py
 
 * Open CMD box
 * python crontab.py [crontab.txt [crontab.log [crontab.pid]]]
@@ -33,7 +33,7 @@ see crontab.txt
 
 The defaults are crontab.txt,crontab.log,crontab.pid
 
-## Running winCron as a Service
+## Running crontab.py as a Service
 
 ### Under construction
 
