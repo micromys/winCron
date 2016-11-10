@@ -19,5 +19,11 @@ see crontab.txt
 
 download winCron.py
 
+## Install winCron
+
+python winCron.py [crontab.txt [crontab.log [crontab.pid]]]
+
+The defaults are crontab.txt,crontab.log,crontab.pid
+
 
 
