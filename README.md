@@ -13,12 +13,13 @@ crontab.pyc supports almost all timing-arguments that Linux crontab supports, li
 * hyphen (-) seperated arguments to specify a range like 12-16 for running jobs between 12:00 and 16:59
 * slash (/) seperated arguments to execute commands repeatedly \*/15 for every 15 min
 * empty lines or lines starting with # are ignored
-* **@yearly, @daily, @hourly** are supported but internally converted to 0 0 1 1 *,0 0 * * *,0 * * * *
-* @reboot (run at startup) is currently not supported
-* Additional arguments
-  * **@mon,@tue,@wed,@thu,@fri,@sat,@sun** for starting jobs at midnight
-  * **@midnight** (=@daily), **@noon** for daily jobs at 12:00:00
-  * **@weekly** (=@mon) and **@monthly** (first day of the month at midnight)
+* Arguments
+  * **@yearly, @daily, @hourly** are supported but internally converted to 0 0 1 1 *,0 0 * * *,0 * * * *
+  * @reboot (run at startup) is currently **not supported**
+  * Additional arguments
+    * **@mon,@tue,@wed,@thu,@fri,@sat,@sun** for starting jobs at midnight
+    * **@midnight** (=@daily), **@noon** for daily jobs at 12:00:00
+    * **@weekly** (=@mon) and **@monthly** (first day of the month at midnight)
   
 **You cannot combine arguments per field (m/h/mon/dom/dow)**
 
