@@ -9,7 +9,7 @@ crontab.py supports all timing-arguments that Linux crontab supports, like:
 * comma (,) seperated arguments like 11,12,13 for 11th,12th,13th (minute,hour,mon,dom)
 * hyphen (-) seperated argument to specify a range like 12-16 for running jobs between 12:00 and 16:59
 * empty lines or lines starting with # are ignored
-* **@yearly, @daily, @hourly** are supported by internally converted to **0 0 1 1 *,0 0 * * *,0 * * * *** 
+* **@yearly, @daily, @hourly** are supported but internally converted to ## 0 0 1 1 *,0 0 * * *,0 * * * * ## 
 * @reboot (run at startup) is currently not supported
 
 **Sample crontab.txt**
