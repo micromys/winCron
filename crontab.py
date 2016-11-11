@@ -144,7 +144,7 @@ while 1:	# loop forever
 		lines = file(crontabFileName,'r').readlines()	# Read the crontab file
 		lineNum = 1										# line numbering
 
-		# replace special keywords by standard syntax
+		# replace special keywords by standard syntax before processing 
 		lines = [keywords.replace('@year','0 0 1 1 *') for keywords in lines]
 		lines = [keywords.replace('@daily','0 0 * * *') for keywords in lines]
 		lines = [keywords.replace('@midnight','0 0 * * *') for keywords in lines]
@@ -162,7 +162,6 @@ while 1:	# loop forever
 		lines = [keywords.replace('@fri','0 0 * * 4') for keywords in lines]
 		lines = [keywords.replace('@sat','0 0 * * 5') for keywords in lines]
 		lines = [keywords.replace('@sun','0 0 * * 6') for keywords in lines]
-
 
 		for line in lines:								# process every line in lines
 			if line[0] != '#' and len(string.strip(line)) != 0:	# Ignore comments and empty lines
