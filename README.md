@@ -5,7 +5,7 @@ This program is tested under Windows 10 with Python 2.7 but should also work und
 ## crontab.pyc
 Crontab for windows 10
 
-A Windows crontab.pyc program analogue to linux crontab utility
+A Windows program analogue to linux crontab utility
 
 crontab.pyc supports almost all timing-arguments that Linux crontab supports, like:
 * * for every every minute,hour,month,day of month,day of week
@@ -19,7 +19,7 @@ crontab.pyc supports almost all timing-arguments that Linux crontab supports, li
   * **@midnight** (=@daily), **@noon** for daily jobs at 12:00:00
   * **@weekly** (=@mon) and **@monthly** (first day of the month at midnight)
   
-**crontab.pyc** reads **crontab.txt** and does not modify files on your system except ***crontab.log*** and ***crontab.pid***
+***crontab.pyc*** reads ***crontab.txt*** and does not modify files on your system except ***crontab.log*** and ***crontab.pid***
 
 ## Sample crontab.txt
 
@@ -27,8 +27,8 @@ crontab.pyc supports almost all timing-arguments that Linux crontab supports, li
 
 ## Install crontab.pyc (compiled from crontab.py)
 
-* download crontab.pyc
-* create crontab.txt or download crontab.txt and adapt it
+* download *crontab.pyc*
+* create *crontab.txt* or download crontab.txt and adapt it
 
 ## Running crontab.pyc
 
@@ -41,7 +41,7 @@ crontab.pyc supports almost all timing-arguments that Linux crontab supports, li
   * Run: Minimised
   * optionally you can put the shortcut in the startup folder (C:\Users\yourname\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup) to start crontab.pyc on startup
 
-The defaults filenames are crontab.txt,crontab.log,crontab.pid
+The defaults filenames are ***crontab.txt,crontab.log,crontab.pid***
 
 ## Start crontab.pyc using Windows Task Scheduler
 
@@ -49,8 +49,6 @@ The defaults filenames are crontab.txt,crontab.log,crontab.pid
 * edit to change "yourname" and "yourpath"
 * Open CMD box
 * schtasks /Create /TN winCron /XML crontab.xml
-
-### Under construction
 
 ## Running crontab.pyc as a Service
 
