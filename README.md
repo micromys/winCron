@@ -30,7 +30,7 @@ crontab.pyc supports almost all timing-arguments that Linux crontab supports, li
   * target: C:\Python27\python.exe crontab.pyc crontab.txt crontab.log crontab.pid
   * start in: "C:\Users\your name\Desktop"
   * Run: Minimised
-  * optionally you can put the shortcut in the startup folder (C:\Users\yourname\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup) to start crontab.py on startup
+  * optionally you can put the shortcut in the startup folder (C:\Users\yourname\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup) to start crontab.pyc on startup
 
 The defaults filenames are crontab.txt,crontab.log,crontab.pid
 
