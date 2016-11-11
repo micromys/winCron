@@ -18,6 +18,8 @@ crontab.pyc supports almost all timing-arguments that Linux crontab supports, li
   * **@mon,@tue,@wed,@thu,@fri,@sat,@sun** for starting jobs at midnight
   * **@midnight** (=@daily), **@noon** for daily jobs at 12:00:00
   * **@weekly** (=@mon) and **@monthly** (first day of the month at midnight)
+  
+crontab.pyc reads crontab.txt and does not modify files on your system except crontab.log and crontab.pid
 
 ## Sample crontab.txt
 
