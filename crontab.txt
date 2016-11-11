@@ -8,6 +8,12 @@
 #	dow		day of week		0-6		*/2: every even day of the week (0,2,4,6); 0,3,6: Mon,Thu,Sun; 3-5: Thu,Fri,Sat				(0=Mon,...,6=Sun)
 #	command							command windows can understand
 #
+# argument									command
+# @mon		= runs on monday at midnight (00:00:00) (equiv for @tue,@wed,@thu,@fri,@sat,@sun)
+# @weekly	= runs on monday at midnight (00:00:00)
+# @monthly	= runs first day of each month at midnight
+# @noon		= runs daily at 12:00:00
+#
 # m		h			dom		mon		dow		command
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 #
