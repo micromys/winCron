@@ -11,7 +11,7 @@ crontab.pyc supports almost all timing-arguments that Linux crontab supports, li
 * empty lines or lines starting with # are ignored
 * **@yearly, @daily, @hourly** are supported but internally converted to 0 0 1 1 *,0 0 * * *,0 * * * *
 * @reboot (run at startup) is currently not supported
-* New arguments
+* Additional arguments
   * **@mon,@tue,@wed,@thu,@fri,@sat,@sun** for starting jobs at midnight
   * **@midnight** (=@daily), **@noon** for daily jobs at 12:00:00
   * **@weekly** (=@mon) and **@monthly** (first day of the month at midnight)
