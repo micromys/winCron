@@ -1,10 +1,10 @@
 # Currently Under Construction
-## crontab.py
+## crontab.pyc
 Crontab for windows
 
-A Windows crontab.py program analogue to linux crontab utility
+A Windows crontab.pyc program analogue to linux crontab utility
 
-crontab.py supports almost all timing-arguments that Linux crontab supports, like:
+crontab.pyc supports almost all timing-arguments that Linux crontab supports, like:
 * * for every every minute,hour,month,day of month,day of week
 * comma (,) seperated arguments like 11,12,13 for 11th,12th,13th (minute,hour,mon,dom)
 * hyphen (-) seperated arguments to specify a range like 12-16 for running jobs between 12:00 and 16:59
@@ -16,25 +16,25 @@ crontab.py supports almost all timing-arguments that Linux crontab supports, lik
 
 **see crontab.txt**
 
-## Install crontab.py
+## Install crontab.pyc (compiled from crontab.py)
 
-* download crontab.py
+* download crontab.pyc
 * create crontab.txt or download crontab.txt and adapt it
 
-## Running crontab.py
+## Running crontab.pyc
 
 * Open CMD box
-* [python path]python.exe [path]crontab.py [[path]crontab.txt [[path]crontab.log [[path]crontab.pid]]]
+* [python path]python.exe [path]crontab.pyc [[path]crontab.txt [[path]crontab.log [[path]crontab.pid]]]
 * all files are supposed to be in the same folder
 * create shortcut on your desktop with: 
-  * target: C:\Python27\python.exe crontab.py crontab.txt crontab.log crontab.pid
+  * target: C:\Python27\python.exe crontab.pyc crontab.txt crontab.log crontab.pid
   * start in: "C:\Users\your name\Desktop"
   * Run: Minimised
   * optionally you can put the shortcut in the startup folder (C:\Users\yourname\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup) to start crontab.py on startup
 
 The defaults filenames are crontab.txt,crontab.log,crontab.pid
 
-## Start crontab.py using Windows Task Scheduler
+## Start crontab.pyc using Windows Task Scheduler
 
 * download crontab.xml
 * edit to change "yourname" and "yourpath"
@@ -43,7 +43,7 @@ The defaults filenames are crontab.txt,crontab.log,crontab.pid
 
 ### Under construction
 
-## Running crontab.py as a Service
+## Running crontab.pyc as a Service
 
 ### Under construction
 
