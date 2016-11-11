@@ -4,7 +4,7 @@
 
 This program is tested under Windows 10 with Python 2.7 but should also work under Windows 7,8
 
-## crontab.pyc
+## crontab.pyc v1.0
 Crontab for windows 10
 
 A Windows program analogue to linux crontab utility
