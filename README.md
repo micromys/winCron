@@ -1,9 +1,9 @@
 # CRONTAB for Windows 10
 
-Disclaimer: the program is tested under Windows 10 with Python 2.7 but should also work under Windows 7,8
+This program is tested under Windows 10 with Python 2.7 but should also work under Windows 7,8
 
 ## crontab.pyc
-Crontab for windows
+Crontab for windows 10
 
 A Windows crontab.pyc program analogue to linux crontab utility
 
