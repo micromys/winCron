@@ -24,9 +24,9 @@ crontab.pyc supports almost all timing-arguments that Linux crontab supports, li
   
 **You cannot combine arguments per field (m/h/mon/dom/dow)**
 
-\*/2 12-16 * * * command    **OK, runs every two minutes between 12:00 and 16:59**
+\*/2 12-16 * * * command ==>>**OK, runs every two minutes between 12:00 and 16:59**
 
-\*/2 12-16,18 * * * command **ERROR**
+\*/2 12-16,18 * * * command ==>>**ERROR**
   
 ***crontab.pyc*** reads ***crontab.txt*** and does not modify files on your system except ***crontab.log*** and ***crontab.pid***
 
