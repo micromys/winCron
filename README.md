@@ -21,7 +21,7 @@ crontab.pyc supports almost all timing-arguments that Linux crontab supports, li
     * **@midnight** (=@daily), **@noon** for daily jobs at 12:00:00
     * **@weekly** (=@mon) and **@monthly** (first day of the month at midnight)
   
-**You cannot combine arguments per field (m/h/mon/dom/dow)**
+**This version does not support a combination of arguments per field (m/h/mon/dom/dow)**
 
 \*/2 12-16 * * * command ==>>**OK, runs every two minutes between 12:00 and 16:59**
 
