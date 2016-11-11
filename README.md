@@ -1,3 +1,5 @@
+# This repository is currently under construction, so this might still change
+
 # CRONTAB for Windows 10
 
 This program is tested under Windows 10 with Python 2.7 but should also work under Windows 7,8
