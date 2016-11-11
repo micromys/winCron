@@ -12,9 +12,9 @@ crontab.py supports almost all timing-arguments that Linux crontab supports, lik
 * **@yearly, @daily, @hourly** are supported but internally converted to 0 0 1 1 *,0 0 * * *,0 * * * *
 * @reboot (run at startup) is currently not supported
 
-**Sample crontab.txt**
+## Sample crontab.txt
 
-## see crontab.txt 
+**see crontab.txt**
 
 ## Install crontab.py
 
