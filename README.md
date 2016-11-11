@@ -34,6 +34,15 @@ crontab.py supports almost all timing-arguments that Linux crontab supports, lik
 
 The defaults filenames are crontab.txt,crontab.log,crontab.pid
 
+## Start crontab.py using Windows Task Scheduler
+
+* download crontab.xml
+* edit to change "yourname" and "yourpath"
+* Open CMD box
+* schtasks /Create /TN winCron /XML crontab.xml
+
+### Under construction
+
 ## Running crontab.py as a Service
 
 ### Under construction
