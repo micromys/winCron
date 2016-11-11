@@ -52,5 +52,5 @@ The defaults filenames are ***crontab.txt,crontab.log,crontab.pid***
 
 ## Running crontab.pyc as a Service
 
-There are severals ways to implement a python program as a windows server. Please refer to https://www.google.com/search?hl=&q=run+python+as+a+windows+service&gws_rd=cr&ei=zHglWOX6C4KQaL2dkOgB
+There are severals ways to implement a python program as a windows server. Please refer to [Python as a Windows Service]https://www.google.com/search?hl=&q=run+python+as+a+windows+service&gws_rd=cr&ei=zHglWOX6C4KQaL2dkOgB to find solutions.
 
