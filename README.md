@@ -2,12 +2,12 @@
 
 This program is tested under Windows 10 with Python 2.7 but should also work under Windows 7,8
 
-## crontab.pyc v1.0
+## crontab.py v1.0
 Crontab for windows 10
 
 A Windows program analogue to linux crontab utility
 
-crontab.pyc supports almost all timing-arguments that Linux crontab supports, like:
+crontab.py supports almost all timing-arguments that Linux crontab supports, like:
 * asterix (\*) for every every minute,hour,month,day of month,day of week
 * comma (,) seperated arguments like 11,12,13 for 11th,12th,13th (minute,hour,mon,dom)
 * hyphen (-) seperated arguments to specify a range like 12-16 for running jobs between 12:00 and 16:59
@@ -27,7 +27,7 @@ crontab.pyc supports almost all timing-arguments that Linux crontab supports, li
 
 \*/2 12-16,18 * * * command ==>>**ERROR**
   
-***crontab.pyc*** reads ***crontab.txt*** and does not modify files on your system except ***crontab.log*** and ***crontab.pid***
+***crontab.py(c)*** reads ***crontab.txt*** and does not modify files on your system except ***crontab.log*** and ***crontab.pid***
 
 ## Sample crontab.txt
 
@@ -35,7 +35,7 @@ crontab.pyc supports almost all timing-arguments that Linux crontab supports, li
 
 ## Install crontab.pyc (compiled from crontab.py)
 
-* download *crontab.pyc*
+* download *crontab.pyc* or *crontab.py*
 * create *crontab.txt* or download crontab.txt and adapt it
 
 ## Running crontab.pyc
@@ -51,7 +51,7 @@ crontab.pyc supports almost all timing-arguments that Linux crontab supports, li
 
 The defaults filenames are ***crontab.txt,crontab.log,crontab.pid***
 
-## Start crontab.pyc using Windows Task Scheduler
+## Start crontab.py(c) using Windows Task Scheduler
 
 * download crontab.xml
 * edit to change "yourname" and "yourpath"
