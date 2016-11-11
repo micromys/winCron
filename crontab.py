@@ -135,6 +135,12 @@ while 1:	# loop forever
 		lines = file(crontabFileName,'r').readlines()	# Read the crontab file
 		lineNum = 1										# line numbering
 
+		# replace special keywords by standard syntax
+		lines = [keywords.replace('@year','0 0 1 1 *') for keywords in lines]
+		lines = [keywords.replace('@daily','0 0 * * *') for keywords in lines]
+		lines = [keywords.replace('@hourly','0 * * * *') for keywords in lines]
+		lines = [keywords.replace('@reboot','#reboot') for keywords in lines]
+
 		for line in lines:								# process every line in lines
 			if line[0] != '#' and len(string.strip(line)) != 0:	# Ignore comments and empty lines
 				try:
@@ -163,3 +169,4 @@ while 1:	# loop forever
 		log('cron: error opening %s file' % crontabFileName)
 
 	time.sleep(deltasleep(60)) # wait 60 seconds, until next minute
+
