@@ -50,7 +50,7 @@ The defaults filenames are ***crontab.txt,crontab.log,crontab.pid***
 * Open CMD box
 * schtasks /Create /TN winCron /XML crontab.xml
 
-## Running crontab.pyc as a Service
+## Running crontab.pyc as a Windows Service
 
 Please follow this link to find solutions to run [a python program as a windows service](https://www.google.com/search?hl=&q=run+python+as+a+windows+service&gws_rd=cr&ei=zHglWOX6C4KQaL2dkOgB).
 
