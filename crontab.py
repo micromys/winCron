@@ -32,6 +32,7 @@ import sys
 import string
 import signal
 import datetime
+import tempfile
 
 def deltasleep(t=60):    	# due to crontab startup delay, starttime is synced up to t seconds
     sec = float(datetime.datetime.now().strftime("%S.%f")) # get seconds.microseconds
@@ -98,15 +99,20 @@ def match(value, expr, interval=1):
 
 signal.signal(signal.SIGINT, signal_handler)	# setup signal handler
 
+tmpdir = tempfile.gettempdir() # get the current temporary directory
+
+if os.name == 'nt':
+	tmpdir=tmpdir+"\\"
+else:
+	tmpdir=tmpdir+"/"
+
 # default file names
 crontabFileName	= "crontab.txt"
-logFileName 	= "crontab.log"
-pidFileName 	= "crontab.pid"
+logFileName 	= tmpdir+"crontab.log"
+pidFileName 	= tmpdir+"crontab.pid"
 
 try:	# override defaults with arguments
 	crontabFileName	= sys.argv[1]
-	logFileName 	= sys.argv[2]
-	pidFileName 	= sys.argv[3]
 except:	
 	pass
 
