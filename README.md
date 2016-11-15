@@ -2,9 +2,10 @@
 
 This program is tested under Windows 10 with Python 2.7 but should also work under Windows 7,8
 
-## changes
+## 2016-11-15 Changes
 * ini file support to track crontab.txt changes
-* create internal $crontab.bin for fast crontab scanning 
+* each time crontab.txt is changed a new interal $crontab.bin is generated
+* $crontab.bin is for fast scanning
   * comments and empty lines are removed
   * symbolic names are converted to time events
 
