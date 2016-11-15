@@ -9,7 +9,7 @@ This program is tested under Windows 10 with Python 2.7 but should also work und
   * comments and empty lines are removed
   * symbolic names are converted to time events
 
-## crontab.py v1.0
+## crontab.py
 Crontab for windows 10
 
 A Windows program analogue to linux crontab utility
