@@ -2,6 +2,12 @@
 
 This program is tested under Windows 10 with Python 2.7 but should also work under Windows 7,8
 
+## changes
+* ini file support to track crontab.txt changes
+* create internal $crontab.bin for fast crontab scanning 
+  * comments and empty lines are removed
+  * symbolic names are converted to time events
+
 ## crontab.py v1.0
 Crontab for windows 10
 
