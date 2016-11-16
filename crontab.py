@@ -102,7 +102,7 @@ def match(value, expr, interval=1):
 
 def CheckCrontabUpdate(crontabFileName):
 
-	# whenever crontabFileName has been changed a new interbal $crontab.bin is generated
+	# whenever crontabFileName has been changed a new internal $crontab.bin is generated
 	#	- replace symbolic names (@daily, @mon, etc)
 	#	- remove comment and empty lines
 
@@ -119,8 +119,12 @@ def CheckCrontabUpdate(crontabFileName):
 		print datetime.datetime.now(), 'error reading config file, config = ',configfile
 		sys.exit(4)
 
-	# os.stat(filenme) get file attributes
-	(mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat(crontabFileName)
+	try:
+		# os.stat(filenme) get file attributes
+		(mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat(crontabFileName)
+	except:
+		print datetime.datetime.now(), 'error reading config file, crontab = ',crobtabFileName
+		sys.exit(4)
 
 	if filetime!=mtime:		#	check if modified time has been changed
 		#print filetime, mtime
@@ -157,11 +161,9 @@ def CheckCrontabUpdate(crontabFileName):
 		except:	# issue error message when crontab cannot be opened
 			log('cron: error opening %s file' % crontabFileName)
 
-		config.set('crontab','filetime', mtime)	# set new m(odified) time
+		config.set('crontab','filetime', mtime)	# set new m(odified)time
 		with open('crontab.ini', 'wb') as configfile:
 			config.write(configfile)
-
-
 
 signal.signal(signal.SIGINT, signal_handler)	# setup signal handler
 
