@@ -59,11 +59,11 @@ crontab.py supports almost all timing-arguments that Linux crontab supports, lik
 ## Running crontab.pyc
 
 * Open CMD box
-* [python path]python.exe [path]crontab.pyc [[path]crontab.txt
+* [python path]python.exe [path]crontab.py[c] [[path]crontab.txt
 * all files are supposed to be in the same folder
 * create shortcut on your desktop with: 
-  * target: C:\Python27\python.exe crontab.pyc crontab.txt
-  * start in: "C:\Users\your name\Desktop"
+  * target: C:\Python38\python.exe crontab.pyc [crontab.txt]
+  * start in: your directory
   * Run: Minimised
   * optionally you can put the shortcut in the startup folder (C:\Users\yourname\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup) to start crontab.pyc on startup
 
