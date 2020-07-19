@@ -7,6 +7,7 @@ This program is tested under Windows 10 with Python 3.8. but should also work un
 * install all files in the same directory
 * temp dir is used to store log and pid files
 * ini file processing removed
+* ability to run .bat/.cmd files, start cmd /C is prepended to file.cmd/file.bat
 * at startup and whenever crontab.txt is changed a new interal $crontab.bin is generated
 * $crontab.bin is for fast scanning
   * comments and empty lines are removed
