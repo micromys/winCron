@@ -31,11 +31,9 @@
 #
 ##############################################################################
 
-import configparser
 import datetime
 import os
 import signal
-import string
 import subprocess
 import sys
 import tempfile
@@ -43,7 +41,7 @@ import time
 
 filetime = 0
 
-cwd = f"{os.getcwd()}"
+cwd = f"{os.getcwd()}"      # get current working directory
 
 
 def deltasleep(t=60):    	# due to crontab startup delay, starttime is synced up to t seconds
@@ -67,22 +65,18 @@ def signal_handler(signal, frame):  # handle keyboard signals and quit
 
 
 def run(command):
-    log(command)
     try:
         # For windows prepend "start" to spawn the shell command in another process and avoid waiting
+        startprefix = ''
         if os.name == 'nt':
-            # os.system(command)
+            startprefix = 'start '
             ext = command.split()[0][-5:-1]
-            if ext == '.bat' or ext == '.cmd':
-                # print("==>> <<==")
-                # print(command.split()[0])
-                cmd = command.split()[0][1:-1]
-                # print(cmd)
-                subprocess.call([cmd])
-            else:
-                os.system('start ' + command)
-        else:
-            os.system(command)
+            if ext in ('.bat', '.cmd'):
+                startprefix += 'cmd /C '
+
+        cmd = startprefix+command
+        log(cmd)
+        os.system(cmd)
     except:
         log('last command failed to start')
 
@@ -94,7 +88,6 @@ def match(value, expr, interval=1):
     if expr == '*':					# return 1 when expr="*"
         return 1
 
-    # values = string.split(expr, '-')  # expr like n-m
     values = expr.split('-')       # expr like n-m
     if len(values) > 1:				# return 1 for every value in interval n-m
         try:
@@ -103,7 +96,6 @@ def match(value, expr, interval=1):
         except:
             pass
 
-    # values = string.split(expr, '/')  # expr like */n
     values = expr.split('/')		# expr like */n
     if len(values) > 1:				# return 1 for every n occurence
         if int(interval) != 0:
@@ -114,7 +106,6 @@ def match(value, expr, interval=1):
             except:
                 pass
 
-    # values = string.split(expr, ',')  # expr like n,m,o,p
     values = expr.split(',')		# expr like n,m,o,p
     for v in values:
         try:
@@ -201,12 +192,10 @@ except:
 
 # Write the pid in the current directory.
 f = open(pidFileName, 'w')
-# f = file(pidFileName, 'w')
 f.write(str(os.getpid()))
 f.close()
 
 # Log cron start
-# print sys.version
 log('Python version %s.%s.%s' % sys.version_info[:3])
 log('started with file %s' % crontabFileName)
 log('wait %s seconds for first crontab scan' % round(deltasleep(60), 2))
