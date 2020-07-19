@@ -10,18 +10,59 @@
 #
 # argument									command
 # @mon		= runs on monday at midnight (00:00:00) (equiv for @tue,@wed,@thu,@fri,@sat,@sun)
+# @hourly	= runs at the top of every hour
 # @weekly	= runs on monday at midnight (00:00:00)
 # @monthly	= runs first day of each month at midnight
+# @year		= runs at 1ste january at 00:00:00
 # @noon		= runs daily at 12:00:00
+# @daily	= runs daily at 00:00:00
+# @midnight	= runs daily at 00:00:00
 #
 # m		h			dom		mon		dow		command
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 #
-30 		10,13,16	*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\Sync_DS.ffs_batch"
+01 		*/2			*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_keepass.ffs_batch"
 #
-00		11,15		*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_d2n.ffs_batch"
+25 		9-17		*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_aomeibackup.ffs_batch"
 #
-00		17			*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_pc.ffs_batch"
+15 		*/3			*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_d2y.ffs_batch"
+30		*/3			*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_d2dsm.ffs_batch"
 #
+15 		11,16		*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_ps2y.ffs_batch"
+30		11,16		*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_ps2dsm.ffs_batch"
+#
+45		8			*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_d2micromys.ffs_batch"
+#
+05		15			*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_c2y.ffs_batch"
+35		15			*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_c2dsm.ffs_batch"
+#
+25		10,13,16	*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\AllWebSites.ffs_batch"
+#
+#10		11,15		*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_mediatheek_audiotheek_x2m.ffs_batch"
+15		11,15		*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_mediatheek_audiotheek2nas.ffs_batch"
+#
+#20		11,15		*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_mediatheek_itunes_x2m.ffs_batch"
+25		11,15		*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_mediatheek_itunes2nas.ffs_batch"
+#
+30		13			*		*		0-4		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_vbox2dsm.ffs_batch"
+#
+#20		14			*		*		1,4		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_mediatheek_fotos_x2m.ffs_batch"
+30		14			*		*		1,4		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_mediatheek_fotos2nas.ffs_batch"
+#
+#20		14			*		*		2,5		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_mediatheek_books_x2m.ffs_batch"
+30		14			*		*		2,5		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_mediatheek_books2nas.ffs_batch"
+#
+30		 8			*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_exchange.ffs_batch"
+35		16			*		*		*		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_exchange.ffs_batch"
+#
+45		16			*		*		0,3		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_windowsbackup.ffs_batch"
+#
+##25		13			*		*		3		"C:\Program Files\FreeFileSync\FreeFileSync.exe" "D:\Documenten\FreeFileSync\sync_videotheek2nas.ffs_batch"
+#@daily										"d:\echo.bat"
+#*		*			*		*		*		"d:\echo.bat"
 #*		*			*		*		*		"d:\echo.cmd"
-@daily										"d:\echo.cmd"
+#
+#45		*			*		*		*		"d:\scan.cmd"
+#
+#*		*			*		*		*		"echo 'test'"
+#34		*			*		*		*		"C:\Program Files\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1
