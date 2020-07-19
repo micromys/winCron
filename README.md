@@ -5,7 +5,7 @@ This program is tested under Windows 10 with Python 3.8. but should also work un
 ## 20202-07-19 Changes
 * python 3.8 now!
 * ini file processing removed
-* at startup and wheneven crontab.txt is changed a new interal $crontab.bin is generated
+* at startup and whenever crontab.txt is changed a new interal $crontab.bin is generated
 * $crontab.bin is for fast scanning
   * comments and empty lines are removed
   * symbolic names are converted to time events
