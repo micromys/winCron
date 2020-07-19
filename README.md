@@ -44,15 +44,15 @@ crontab.py supports almost all timing-arguments that Linux crontab supports, lik
 
 \*/2 12-16,18 * * * command ==>>**ERROR**
   
-***crontab.py(c)*** reads ***crontab.txt*** and does not modify files on your system except ***crontab.log*** and ***crontab.pid***
+***crontab.py[c]*** reads ***crontab.txt*** and does not modify files on your system except ***crontab.log*** and ***crontab.pid***
 
 ## Sample crontab.txt
 
 **see crontab.txt**
 
-## Install crontab.pyc (compiled from crontab.py)
+## Install crontab.py[c] (compiled from crontab.py)
 
-* download *crontab.pyc* or *crontab.py*
+* download *crontab.py*
 * create *crontab.txt* or download crontab.txt and adapt it
 * crontab.log and crontab.pid are saved in the current temp directory
 
@@ -62,21 +62,21 @@ crontab.py supports almost all timing-arguments that Linux crontab supports, lik
 * [python path]python.exe [path]crontab.py[c] [[path]crontab.txt
 * all files are supposed to be in the same folder
 * create shortcut on your desktop with: 
-  * target: C:\Python38\python.exe crontab.pyc [crontab.txt]
+  * target: C:\Python38\python.exe crontab.py[c] [crontab.txt]
   * start in: your directory
   * Run: Minimised
   * optionally you can put the shortcut in the startup folder (C:\Users\yourname\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup) to start crontab.pyc on startup
 
 The defaults filenames are ***crontab.txt,crontab.log,crontab.pid***
 
-## Start crontab.py(c) using Windows Task Scheduler
+## Start crontab.py[c] using Windows Task Scheduler
 
 * download crontab.xml
 * edit to change "yourname" and "yourpath"
 * Open CMD box
 * schtasks /Create /TN winCron /XML crontab.xml
 
-## Running crontab.pyc as a Windows Service
+## Running crontab.py[c] as a Windows Service
 
 Please follow this link to find solutions to run [a python program as a windows service](https://www.google.com/search?hl=&q=run+python+as+a+windows+service&gws_rd=cr&ei=zHglWOX6C4KQaL2dkOgB).
 
