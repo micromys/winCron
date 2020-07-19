@@ -25,7 +25,7 @@ Crontab for windows 10
 A Windows program analogue to linux crontab utility
 
 crontab.py supports almost all timing-arguments that Linux crontab supports, like:
-* asterix (\*) for every every minute,hour,month,day of month,day of week
+* asterix (\*) for every minute,hour,month,day of month,day of week
 * comma (,) seperated arguments like 11,12,13 for 11th,12th,13th (minute,hour,mon,dom)
 * hyphen (-) seperated arguments to specify a range like 12-16 for running jobs between 12:00 and 16:59
 * slash (/) seperated arguments to execute commands repeatedly \*/15 for every 15 min
