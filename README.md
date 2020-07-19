@@ -51,7 +51,8 @@ crontab.py supports almost all timing-arguments that Linux crontab supports, lik
 
 **see crontab.txt**
 
-**the command and command argument(s) in the crontab.txt should each be enclosed double quotes**, i.e. like 1 * * * * "command.exe" "arg1" "arg2"
+**the command and command argument(s) in the crontab.txt should each be enclosed double quotes**,
+i.e. like 1 * * * * "command.exe" "arg1" "arg2"
 
 ## Install crontab.py[c] (compiled from crontab.py)
 
