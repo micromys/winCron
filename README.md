@@ -2,7 +2,7 @@
 
 This program is tested under Windows 10 with Python 3.8. but should also work under Windows 7,8
 
-## 20202-07-19 Changes
+## 2020-07-19 Changes
 * python 3.8 now!
 * ini file processing removed
 * at startup and whenever crontab.txt is changed a new interal $crontab.bin is generated
