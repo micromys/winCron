@@ -1,6 +1,9 @@
-# CRONTAB for Windows 10
+# CRONTAB for Windows 10/11
 
-This program is tested under Windows 10 with Python 3.8. but should also work under Windows 7,8
+This program is tested under Windows 10 with Python 3.8. but should also work under Windows 7,8,10,11
+
+## 2025-05-24 Changes
+* python >=3.8
 
 ## 2020-07-19 Changes
 * python 3.8 now!
