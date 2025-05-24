@@ -4,6 +4,7 @@ This program is tested under Windows 10 with Python 3.8. but should also work un
 
 ## 2025-05-24 Changes
 * python >=3.8
+* Windows 10/11
 
 ## 2020-07-19 Changes
 * python 3.8 now!
